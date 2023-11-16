@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+
+  head{
+    scroll-behavior: smooth;
+  }
+  /* Define custom color variables */
+  :root {
+    --color-primary-yellow: #FFB228;
+    --color-primary-green: #31cd72;
+    --color-primary-background: #2D2E32;
+  }
+  
+  /* Style the scrollbar */
+  body::-webkit-scrollbar {
+    width: 0.7em;
+  }
+  
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(28, 27, 27, 0.3);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #141414;
+  }
+  
+  /* Global body styles */
+  body {
+    color: #DCDDDB;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-primary-background);
+    
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #27282a;
+  }
+  div > div.left-col > button{
+    margin-top: 1rem;
+  }
+  .header-text {
+    font-size: 3rem;
+    font-family: Roboto;
+  }
+  
+  nav {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    align-items: center;
+  }
+  
+  a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #DCDDDB;
+    font-family: 'Roboto', serif;
+  }
+  
+  .logo {
+    width: 90px;
+    height: 70px;
+    margin-left: 2rem;
+  }
+
+
+
+
+
+/* #################################################################*/
+main .container {
+    display: flex;
+    width: 100%;
+    padding: 5rem;
+}
+button {
+    background-color: var(--color-primary-yellow);
+    color: #25262A;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+main .left-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+main .left-col button {
+    width: 30%;
+}
+main .right-col {
+    width: 50%;
+}
+
+main .wrapper {
+    min-height: 100vh;
+    background-color: #25262A;
+}
+
+main .photo{
+    width: 80%;
+    height: 100%;
+    border-radius: 2rem;
+    display: flex;
+    margin-left: auto;
+}
+
+main .project-1{
+    color: #1af274;;
+    font-size: 1.4rem;
+    font-family: "Roboto";
+}
+
+main .left-col h1 {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-family: "Roboto";
+}
+
+main .left-col p {
+    font-size: 1.3rem;
+    font-family: "Poppins";
+}
+
+
+/* ###################################################################### */
+.section-1 {
+    min-height: 100vh;
+}
+
+
+.section-1 .container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 5rem;
+}
+
+
+.section-1 .left-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.section-1 .left-col button {
+    width: 30%;
+}
+.section-1 .right-col {
+    width: 50%;
+}
+
+.section-1 .wrapper {
+    min-height: 100vh;
+    background-color: #25262A;
+}
+
+.section-1 .photo{
+    width: 80%;
+    height: 100%;
+    border-radius: 2rem;
+    display: flex;
+    
+}
+
+.section-1 .project-1{
+    color: #1af274;;
+    font-size: 1.4rem;
+    font-family: "Roboto";
+}
+
+.section-1 .left-col h1 {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-family: "Roboto";
+}
+
+.section-1 .left-col p {
+    font-size: 1.3rem;
+    font-family: "Poppins";
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+  
+    nav ul {
+        flex-direction: rows;
+        gap: 2rem;
+        list-style-type: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    main .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    main .left-col{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    main .right-col{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    main .photo {
+        width: 100%;
+        
+    }
+
+    main > div > div.left-col > button {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+
+    .section-1 .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .section-1  .left-col{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-1  .right-col{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    .section-1  .photo {
+        width: 100%;
+        
+    }
+
+    .section-1  > div > div.left-col > button {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+}
