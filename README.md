@@ -1,3 +1,3 @@
 # portfolio
 
-#(images/1.png)
+(images/1.jpg)
